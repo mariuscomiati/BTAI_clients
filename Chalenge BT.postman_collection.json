@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "c136222e-5cd2-4e77-9ce1-38e8f12076fa",
+		"name": "Chalenge BT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8762/clients/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8762",
+					"path": [
+						"clients",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8762/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lastName\": \"Marius\",\n    \"firstName\": \"Comiati\",\n    \"gender\": \"MALE\",\n    \"cnp\": \"1970612303930\",\n    \"series\": \"SM\",\n    \"number\": \"123456\",\n    \"nationality\": \"ROU\",\n    \"birthPlace\": \"satu mare\",\n    \"address\": \"sirul mare 22, botiz\",\n    \"issuer\": \"SPCLEP Satu Mare\",\n    \"validFrom\": \"2020-02-21\",\n    \"validUntil\": \"2022-02-21\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8762/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8762",
+					"path": [
+						"clients"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
